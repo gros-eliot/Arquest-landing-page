@@ -1,0 +1,11 @@
+
+.header__start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#compte_a_rebours {
+    font-size: var(--pc--header2);
+    font-family: 'Press Start 2P', sans-serif;
+}

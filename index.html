@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel='stylesheet' href='src/css/style.css'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquest | Accueil</title>
 </head>
 <body>
-    <header>
+    <header class="header">
 
-        <label id="compte_a_rebours"></label>
-            <script type="text/javascript">
-                var Affiche=document.getElementById("compte_a_rebours");
-                function Rebour() {
-                var date1 = new Date();
-                var date2 = new Date ("Jun 15, 2022 00:00:00");
-                var sec = (date2 - date1) / 1000;
-                var n = 24 * 3600;
-                if (sec > 0) {
-                j = Math.floor (sec / n);
-                h = Math.floor ((sec - (j * n)) / 3600);
-                mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
-                sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
-                Affiche.innerHTML = "" + j +":"+ h +":"+ mn +":"+ sec;
-                window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
-                }
-                tRebour=setTimeout ("Rebour();", 1000);
-                }
-                Rebour();
-        </script>
+        <div class="header__start">
+            <label id="compte_a_rebours"></label>
+                <script type="text/javascript">
+                    var Affiche=document.getElementById("compte_a_rebours");
+                    function Rebour() {
+                    var date1 = new Date();
+                    var date2 = new Date ("Jun 15, 2022 00:00:00");
+                    var sec = (date2 - date1) / 1000;
+                    var n = 24 * 3600;
+                    if (sec > 0) {
+                    j = Math.floor (sec / n);
+                    h = Math.floor ((sec - (j * n)) / 3600);
+                    mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                    sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                    Affiche.innerHTML = "" + j +":"+ h +":"+ mn +":"+ sec;
+                    window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+                    }
+                    tRebour=setTimeout ("Rebour();", 1000);
+                    }
+                    Rebour();
+                </script>
+        </div>
 
-        <a href="/"><img src="src/logo/arquest_full.svg" alt="Arquest logo"></a>
-        <p><a href="apropos.html">À propos</a></p>
-        <p><a href="contact.html">Soutenir</a></p>
+
+        <a href="/" class="header__mid"><img src="assets/logo/arquest_full.svg" alt="Arquest logo" class="header__logo"></a>
+
+
+        <div class="header__end">
+            <p><a href="apropos.html">À propos</a></p>
+            <p><a href="contact.html">Soutenir</a></p>
+        </div>
+
     </header>
 
     <main>
@@ -43,27 +52,30 @@
             <h1>
                 un jeu
             </h1>
-            <p>Qu’attendez-vous pour accomplir vos objectifs ? 
-                </p>
-            <h3>Développée par 3 étudiants, Arquest est conçue pour être au plus près de vos besoins.</h3>
+            <h3>Qu’attendez-vous pour accomplir vos objectifs ? 
+            </h3>
+            <p>Développée par 3 étudiants, Arquest est conçue pour être au plus près de vos besoins.</p >
 
-            <p>Soutenir</p>
+            <div>
+                <a href="soutenir.html">Soutenir</a>
+            </div>
+            
             <p>Paiements sécurisés et sans frais supplémentaires</p>
         </div>
 
         <div>
             <div>
-                <img src="src/img/trophy.png" alt="Trophée">
+                <img src="assets/img/trophy.png" alt="Trophée">
                 <h2>Motivation</h2>
                 <p>Web app basée sur un système de <strong>récompense</strong> qui vous permettra de vous motiver à <strong>accomplir</strong> les tâches que vous vous fixerez.</p>
             </div>
             <div>
-                <img src="src/img/agenda.png" alt="Algenda">
+                <img src="assets/img/agenda.png" alt="Algenda">
                 <h2>Agenda</h2>
                 <p>Optimisez votre organisation des tâches grâce à un <strong>agenda</strong> personnalisable.</p>
             </div>
             <div>
-                <img src="src/img/social.png" alt="Social">
+                <img src="assets/img/social.png" alt="Social">
                 <h2>Social</h2>
                 <p>Interagissez avec les autres <strong>utilisateurs</strong> pour partager vos réussites quotidiennes*</p>
                 <p>*Disponible dans la version payante</p>
@@ -85,31 +97,33 @@
 
             <div>
                 <h3>Gratuit</h3>
-                    <img src="src/logo/croix.svg" alt="Non disponible">
-                    <img src="src/logo/croix.svg" alt="Non disponible">
-                    <img src="src/logo/croix.svg" alt="Non disponible">
-                    <img src="src/logo/coche.svg" alt="Disponible">
-                    <img src="src/logo/coche.svg" alt="Disponible">
+                    <img src="assets/logo/croix.svg" alt="Non disponible">
+                    <img src="assets/logo/croix.svg" alt="Non disponible">
+                    <img src="assets/logo/croix.svg" alt="Non disponible">
+                    <img src="assets/logo/coche.svg" alt="Disponible">
+                    <img src="assets/logo/coche.svg" alt="Disponible">
                     <p>3 simultanées</p>
             </div>
 
             <div>
                 <h3>Payant</h3>
                 <h4>(1,99€/mois)</h4>
-                    <img src="src/logo/coche.svg" alt="Disponible">
-                    <img src="src/logo/coche.svg" alt="Disponible">
-                    <img src="src/logo/coche.svg" alt="Disponible">
-                    <img src="src/logo/coche.svg" alt="Disponible">
-                    <img src="src/logo/coche.svg" alt="Disponible">
+                    <img src="assets/logo/coche.svg" alt="Disponible">
+                    <img src="assets/logo/coche.svg" alt="Disponible">
+                    <img src="assets/logo/coche.svg" alt="Disponible">
+                    <img src="assets/logo/coche.svg" alt="Disponible">
+                    <img src="assets/logo/coche.svg" alt="Disponible">
                     <p>Illimité</p>
             </div>
 
-            <p>Soutenir</p>
+            <div>
+                <a href="soutenir.html">Soutenir</a>
+            </div>
 
         </div>
 
         <div>
-            <img src="src/img/french-flag.png" alt="Drapeau français">
+            <img src="assets/img/french-flag.png" alt="Drapeau français">
             <h3>Site réalisé dans la région de Franche-Comté</h3>
         </div>
     </main>
@@ -117,23 +131,23 @@
 
     <footer>
         <div>
-            <img src="src/logo/arquest_full.svg" alt="Logo Arquest">
+            <img src="assets/logo/arquest_full.svg" alt="Logo Arquest">
             <div>
-                <a href=""><img src="src/logo/facebook.svg" alt="Facebook d'Arquest"></a>
-                <a href=""><img src="src/logo/instagram.svg" alt="Instagram Arquest"></a>
-                <a href=""><img src="src/logo/linkedin.svg" alt="Linkedin Arquest"></a>
-                <a href=""><img src="src/logo/twitter.svg" alt="Twitter Arquest"></a>
+                <a href=""><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest"></a>
+                <a href=""><img src="assets/logo/instagram.svg" alt="Instagram Arquest"></a>
+                <a href=""><img src="assets/logo/linkedin.svg" alt="Linkedin Arquest"></a>
+                <a href=""><img src="assets/logo/twitter.svg" alt="Twitter Arquest"></a>
             </div>
 
             <div>
-                <p>Soutenir</p>
+                <a href="soutenir.html">Soutenir</a>
             </div>
         </div>
 
 
-        <h2>Contact</h2>
-        <h2>À propos</h2>
-        <h2>Mentions légales</h2>
+        <h2><a href="contact.html">Contact</a></h2>
+        <h2><a href="apropos.html">À propos</a></h2>
+        <h2><a href="mentions.html">Mentions légales</a></h2>
         <p>Projet réalisé dans le 
             cadre d’un exercice pédagogique au 
             département MMi de Montbéliard</p>

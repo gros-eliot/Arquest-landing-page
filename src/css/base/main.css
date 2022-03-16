@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* GENERALITES (POLICES ET COULEUR) */
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--pc--body);
+}
+
+h1 {
+    font-size: var(--pc--header1);
+}
+
+h2 {
+    font-size: var(--pc--header2);
+}
+
+h3 {
+    font-size: var(--pc--header3);
+}
