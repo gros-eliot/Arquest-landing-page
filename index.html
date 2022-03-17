@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquest | Accueil</title>
 </head>
-<body>
+<body class="index__body">
     <header class="header">
 
         <div class="header__start">
@@ -38,55 +38,66 @@
 
 
         <div class="header__end">
-            <p><a href="apropos.html">À propos</a></p>
-            <p><a href="contact.html">Soutenir</a></p>
+            <div class="header__link-div">
+                <a href="apropos.html" class="header__link">À propos</a>
+            </div>
+
+            <div class="header__link-div">
+                <a href="soutenir.html" class="header__link header__link-button">Soutenir</a>
+            </div>
         </div>
 
     </header>
 
     <main>
-        <div>
-            <h1>
+        <div class="hero">
+            <h1 class="hero__heading1">
                 Faites de votre vie
             </h1>
-            <h1>
+            <h1 class="hero__heading2">
                 un jeu
             </h1>
-            <h3>Qu’attendez-vous pour accomplir vos objectifs ? 
-            </h3>
-            <p>Développée par 3 étudiants, Arquest est conçue pour être au plus près de vos besoins.</p >
 
-            <div>
-                <a href="soutenir.html">Soutenir</a>
+            
+            <img src="assets/img/circles_decorations.png" alt="Cercles décoratifs" class="circles_decorations">
+            <h3 class="hero__heading3">Qu’attendez-vous pour accomplir vos objectifs ? 
+            </h3>
+            <p class="hero__text">Développée par <strong>3 étudiants</strong>, Arquest est conçue pour être au plus près de vos besoins.</p >
+
+                            <!--METTRE UNE ILLUSTRATION A COTE DU TOUT !!!!!!!!-->
+
+
+            <div class="hero__button-div">
+                <a href="soutenir.html" class="hero__button">Soutenir</a>
             </div>
             
-            <p>Paiements sécurisés et sans frais supplémentaires</p>
+            <p class="hero__note">Paiements sécurisés et sans frais supplémentaires</p>
         </div>
 
-        <div>
-            <div>
-                <img src="assets/img/trophy.png" alt="Trophée">
-                <h2>Motivation</h2>
-                <p>Web app basée sur un système de <strong>récompense</strong> qui vous permettra de vous motiver à <strong>accomplir</strong> les tâches que vous vous fixerez.</p>
+        <div class="main_function--main-div">
+            <div class="main_function-div">
+                <img src="assets/img/trophy.png" alt="Trophée" class="main_function__image">
+                <h2 class="main_function__heading">Motivation</h2>
+                <p class="main_function__text">Web app basée sur un système de <strong>récompense</strong> qui vous permettra de vous motiver à <strong>accomplir</strong> les tâches que vous vous fixerez.</p>
             </div>
-            <div>
-                <img src="assets/img/agenda.png" alt="Algenda">
-                <h2>Agenda</h2>
-                <p>Optimisez votre organisation des tâches grâce à un <strong>agenda</strong> personnalisable.</p>
+            <div class="main_function-div">
+                <img src="assets/img/agenda.png" alt="Algenda" class="main_function__image">
+                <h2 class="main_function__heading">Agenda</h2>
+                <p class="main_function__text">Optimisez votre organisation des tâches grâce à un <strong>agenda</strong> personnalisable.</p>
             </div>
-            <div>
-                <img src="assets/img/social.png" alt="Social">
-                <h2>Social</h2>
-                <p>Interagissez avec les autres <strong>utilisateurs</strong> pour partager vos réussites quotidiennes*</p>
-                <p>*Disponible dans la version payante</p>
+            <div class="main_function-div">
+                <img src="assets/img/social.png" alt="Social" class="main_function__image">
+                <h2 class="main_function__heading">Social</h2>
+                <p class="main_function__text">Interagissez avec les autres <strong>utilisateurs</strong> pour partager vos réussites quotidiennes*</p>
             </div>
+            <p class="main_function__ast">*Disponible dans la version payante</p>
         </div>
 
         <video src=""></video>
 
 
-        <div>
-            <div>
+        <div class="tarif">
+            <div class="tarif__functions">
                 <p>Accès à la messagerie</p>
                 <p>Cercle d’amis</p>
                 <p>Item exclusif</p>
@@ -95,7 +106,7 @@
                 <p>Quêtes disponibles</p>
             </div>
 
-            <div>
+            <div class="tarif__gratuit">
                 <h3>Gratuit</h3>
                     <img src="assets/logo/croix.svg" alt="Non disponible">
                     <img src="assets/logo/croix.svg" alt="Non disponible">
@@ -105,7 +116,7 @@
                     <p>3 simultanées</p>
             </div>
 
-            <div>
+            <div class="tarif__payant">
                 <h3>Payant</h3>
                 <h4>(1,99€/mois)</h4>
                     <img src="assets/logo/coche.svg" alt="Disponible">
@@ -115,11 +126,10 @@
                     <img src="assets/logo/coche.svg" alt="Disponible">
                     <p>Illimité</p>
             </div>
+        </div>
 
-            <div>
-                <a href="soutenir.html">Soutenir</a>
-            </div>
-
+        <div class="hero__button-div">
+            <a href="soutenir.html" class="hero__button">Soutenir</a>
         </div>
 
         <div>

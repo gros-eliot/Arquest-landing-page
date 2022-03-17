@@ -14,8 +14,15 @@ body {
     background-color: var(--black);
     color: var(--white);
     font-size: var(--pc--body);
+    margin-top: 100px;
 }
 
+.index__body {
+    background-image: url(../../../assets/img/space_bg.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 50% auto;
+}
 h1 {
     font-size: var(--pc--header1);
 }
