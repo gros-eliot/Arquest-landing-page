@@ -48,7 +48,7 @@
 }
 
 .hero__button {
-    padding: 15px 50px 15px 50px;
+    padding: 16px 50px 15px 50px;
     margin: 1%;
     background-color: var(--blue);
     border-radius: 10px;
@@ -56,9 +56,20 @@
     color: var(--white);
     font-size: var(--pc--header3);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.15px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.header__link:hover {
+    color: rgb(129, 129, 129);
+    transition: color 200ms ease-in-out;
+
+}
+.hero__button:hover, .header__link-button:hover  {
+    color: var(--white);
+    background-color: rgb(8, 8, 121);
+    transition: background-color 200ms ease-in-out;
 }
 
 .hero__note {
@@ -67,17 +78,23 @@
 }
 
 
+
+
+
+
+
+
 /* FONCTIONNALITES*/
 
 .main_function--main-div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,300px));    
-    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(200px,300px)); 
+    grid-gap: 30px;
 
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 6%;
+    justify-content: center;
 }
+
 
 .main_function-div {
     display: flex;
@@ -88,6 +105,8 @@
     border: 2px solid var(--blue);
     border-radius: 20px;
     padding: 10%;
+
+    height: 400px;
 }
 
 .main_function__image {
@@ -112,7 +131,84 @@
     margin-top: -5%;
     font-style: italic;
     font-size: var(--pc--legende);
+
+    /*
+    grid-column: 3/4;
+    grid-row: 2/3;
+    */
 }
 
-/* TARIFS*/
 
+
+
+
+
+
+/*TARIFS*/
+
+/*la boîte contenant toute la partie tarif*/
+.tarif-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -7%;
+}
+
+/*le texte de la prmeière colonne (titres)*/
+.tarif__row__heading {
+    padding: 2%;
+    font-weight: normal;
+}
+
+/*noms des lignes*/
+
+.tarif__row__name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: var(--pc--header3);
+}
+/*intérieur du tableau : symboles*/
+.tarif__symbol {
+    width: 30px;
+}
+
+.tarif__symbol__td {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+/*style  des colonnes*/
+
+.tarif__row2 {
+    border: 20px solid var(--blue);
+}
+
+.tarif__row3 {
+    border: 20px solid var(--purple);
+}
+
+
+
+
+
+
+
+
+
+/*Franche Comté*/
+
+.franche_comte-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10%;
+}
+
+.franche_comte__line {
+    text-align: center;
+
+}
