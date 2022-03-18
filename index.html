@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquest | Accueil</title>
 </head>
-<body class="index__body">
+<body class="body__homepage">
     <header class="header">
 
         <div class="header__start">
@@ -182,38 +182,55 @@
         </div>
 
         <div class="franche_comte-div">
-            <img src="assets/img/french-flag.png" alt="Drapeau français">
+            <img src="assets/img/french-flag.png" alt="Drapeau français" class="franche_comte__img">
             <h3 class="franche_comte__line">Site réalisé dans la région de Franche-Comté</h3>
         </div>
     </main>
 
 
     <footer>
-        <div>
-            <img src="assets/logo/arquest_full.svg" alt="Logo Arquest">
-            <div>
-                <a href=""><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest"></a>
-                <a href=""><img src="assets/logo/instagram.svg" alt="Instagram Arquest"></a>
-                <a href=""><img src="assets/logo/linkedin.svg" alt="Linkedin Arquest"></a>
-                <a href=""><img src="assets/logo/twitter.svg" alt="Twitter Arquest"></a>
-            </div>
+        <div class="footer__top">
+            <img src="assets/logo/arquest_full.svg" alt="Logo Arquest" class="footer__top__img">
 
-            <div>
-                <a href="soutenir.html">Soutenir</a>
+            <div class="footer__top-end">
+                <ul class="listUnstyled footer__socialmedia">
+                    <li><a href="https://www.facebook.com/" class="footer__socialmedia__link"><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://www.instagram.com/" class="footer__socialmedia__link"><img src="assets/logo/instagram.svg" alt="Instagram d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://twitter.com/" class="footer__socialmedia__link"><img src="assets/logo/twitter.svg" alt="Twitter d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <!--<li><a href="https://www.linkedin.com/" class="footer__socialmedia__link"><img src="assets/logo/linkedin.svg" alt="Linkedin" class="footer__socialmedia__link"></a></li>
+                    -->
+                </ul>
+
+
+                <!--Le bouton a les mêmes propriétés que celui du header-->
+                <div class="footer__top__link-div">
+                    <a href="soutenir.html" class="footer__top__link footer__top__link-button">Soutenir</a>
+                </div>
+
             </div>
         </div>
 
+        <div class="footer__bottom">
+            <div class="footer__bottom__link-div">
+            <h3><a href="contact.html" class="footer__bottom__link">Contact</a></h3>
+            <h3><a href="apropos.html" class="footer__bottom__link">À propos</a></h3>
+            <h3><a href="mentions.html" class="footer__bottom__link">Mentions légales</a></h3>
+            
+                <div class="footer__bottom__mention-div">
+                <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard" class="footer__bottom__mention-img">
+                <p class="footer__bottom__mention-line">
+                    Projet réalisé dans le 
+                    cadre d’un exercice pédagogique au 
+                    département MMi de Montbéliard</p>
+                </div> 
+            </div> 
 
-        <h2><a href="contact.html">Contact</a></h2>
-        <h2><a href="apropos.html">À propos</a></h2>
-        <h2><a href="mentions.html">Mentions légales</a></h2>
-        <p>Projet réalisé dans le 
-            cadre d’un exercice pédagogique au 
-            département MMi de Montbéliard</p>
-        
+            <div class="footer__bottom__copyright-div">
+                <p class="footer__bottom__copyright">France</p>
+                <p class="footer__bottom__copyright">Arquest, 2022</p>
+            </div>
+        </div>
 
-        <p>France</p>
-        <p>Arquest, 2022</p>
     </footer>
 </body>
 </html>

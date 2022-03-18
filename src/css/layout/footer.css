@@ -1,0 +1,99 @@
+footer {
+    background-color: var(--grey);
+    padding: 3%;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__top-end {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top__link-div {
+    display: flex;
+    justify-content: end;
+    padding-top: 10%;
+}
+
+.footer__top__link {
+    font-size: var(--pc--header4);
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    width: 120px;
+}
+
+.footer__top__link-button {
+    padding: 6% 15% 6% 15%;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+.footer__socialmedia {
+    display: flex;
+    justify-content: end;
+    gap: 5vh;
+  }
+  
+.footer__socialmedia__link {
+      width: 5vh;
+      height: 5vh;
+    }
+
+/*logo arquest du footer*/
+
+.footer__top__img {
+    width: 300px;
+}
+
+/*partie basse du footer*/
+
+.footer__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__bottom__link {
+    text-decoration: none;
+    font-size: var(--pc--header3);
+    color: var(--white);
+    font-weight: 100;
+}
+
+
+
+.footer__bottom__mention-line {
+    font-weight: 100;
+    text-align: left;
+    font-style: italic;
+    margin: 0%;
+    padding: 1% 35% 1% 3%;
+}
+
+.footer__bottom__mention-div {
+    display: flex;
+    flex-direction: row;
+}
+.footer__bottom__mention-img {
+    width: 40px;
+}
+
+
+.footer__bottom__copyright-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.footer__bottom__copyright {
+    font-weight: 100;
+    text-align: right;
+    margin: 0%;
+}

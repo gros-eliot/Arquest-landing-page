@@ -66,11 +66,6 @@
     transition: color 200ms ease-in-out;
 
 }
-.hero__button:hover, .header__link-button:hover  {
-    color: var(--white);
-    background-color: rgb(8, 8, 121);
-    transition: background-color 200ms ease-in-out;
-}
 
 .hero__note {
     text-align: center;
@@ -205,10 +200,16 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 10%;
+    padding-top: 10%;
+    padding-bottom: 2%;
 }
 
 .franche_comte__line {
     text-align: center;
-    
+    font-weight: normal;
+    font-size: var(--pc--body);
+}
+
+.franche_comte__img {
+    width: 30px;
 }

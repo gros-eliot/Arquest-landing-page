@@ -17,7 +17,7 @@ body {
     margin-top: 100px;
 }
 
-.index__body {
+.body__homepage {
     background-image: url(../../../assets/img/space_bg.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
@@ -33,4 +33,40 @@ h2 {
 
 h3 {
     font-size: var(--pc--header3);
+}
+
+
+
+
+
+  /*les listes à puce avec cette classe n'ont plus de puces*/
+  .listUnstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* le bouton HTML par défaut n'apparaît pas*/
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* bug scroll iOS réglé*/
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
+
+/* animation hover des boutons*/
+
+.hero__button:hover, .header__link-button:hover, .footer__top__link-button:hover  {
+    background-color: rgb(30, 30, 134);
+    color: var(--white);
+    transition: background-color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
 }
