@@ -1,6 +1,4 @@
-
-
-.circles_decorations {
+.circles_decorations__hero {
     top: 0;
     left: 0;
     position: absolute;
@@ -39,34 +37,6 @@
     margin-top: -0.5%;
 }
 
-
-.hero__button-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-}
-
-.hero__button {
-    padding: 16px 50px 15px 50px;
-    margin: 1%;
-    background-color: var(--blue);
-    border-radius: 10px;
-    
-    color: var(--white);
-    font-size: var(--pc--header3);
-    text-transform: uppercase;
-    letter-spacing: 1.15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.header__link:hover {
-    color: rgb(129, 129, 129);
-    transition: color 200ms ease-in-out;
-
-}
-
 .hero__note {
     text-align: center;
     font-weight: 100;
@@ -83,11 +53,12 @@
 
 .main_function--main-div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,300px)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px,300px)); 
     grid-gap: 30px;
+    justify-content: center;
 
     margin-top: 6%;
-    justify-content: center;
+
 }
 
 
@@ -122,8 +93,12 @@
     font-weight: 900;
 }
 
+.main_function__ast-div {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
 .main_function__ast {
-    margin-top: -5%;
     font-style: italic;
     font-size: var(--pc--legende);
 
@@ -146,50 +121,97 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     margin-top: -7%;
 }
 
 /*le texte de la prmeière colonne (titres)*/
 .tarif__row__heading {
-    padding: 2%;
+    padding: 0% 1% 0% 1%;
     font-weight: normal;
+    text-align: center;
 }
 
 /*noms des lignes*/
 
-.tarif__row__name {
+.tarif__row__name2 {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 100;
     font-size: var(--pc--header3);
+    padding: 10px;
+
+
+    border: 3px solid var(--purple);
+    border-radius: 25px 0px 0px 0px;
 }
+
+.tarif__row__name3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--white);
+    font-size: var(--pc--header3);
+    padding: 10px;
+
+
+    border: 3px solid var(--blue);
+}
+
+
 /*intérieur du tableau : symboles*/
 .tarif__symbol {
     width: 30px;
+    height: 30px;
 }
 
 .tarif__symbol__td {
     display: flex;
     justify-content: center;
-    padding: 5%;
 }
 
 /*style  des colonnes*/
 
-.tarif__row2 {
-    border: 20px solid var(--blue);
+.table-style-2, .table-end2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-left: -5px;
+    margin-right: -5px;
+
+    border-top: 3px solid var(--purple);
+    border-bottom: 3px solid var(--purple);
 }
 
-.tarif__row3 {
-    border: 20px solid var(--purple);
+.table-end2 {
+    border-right: 3px solid var(--purple);
+}
+
+.table-style-3, .table-end3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-left: -5px;
+    margin-right: -5px;
+
+    border-top: 3px solid var(--blue);
+    border-bottom: 3px solid var(--blue);
+}
+
+.table-end3 {
+    border-right: 3px solid var(--blue);
+    border-radius: 0px 0px 25px 0px;
 }
 
 
 
+/*TARIFS MOBILE VERSION*/
 
-
-
-
+@media (max-width: 800px) {
+    .tarif__tableau {
+        opacity: 0%;
+        
+    }
+}
 
 
 /*Franche Comté*/
@@ -213,3 +235,4 @@
 .franche_comte__img {
     width: 30px;
 }
+

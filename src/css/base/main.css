@@ -60,13 +60,3 @@ button {
 .noscroll body {
   overflow: hidden;
 }
-
-
-/* animation hover des boutons*/
-
-.hero__button:hover, .header__link-button:hover, .footer__top__link-button:hover  {
-    background-color: rgb(30, 30, 134);
-    color: var(--white);
-    transition: background-color 200ms ease-in-out;
-    transition: color 200ms ease-in-out;
-}

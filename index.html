@@ -39,11 +39,11 @@
 
         <div class="header__end">
             <div class="header__link-div">
-                <a href="apropos.html" class="header__link">À propos</a>
+                <a href="apropos.html" class="header__link layout__link">À propos</a>
             </div>
 
             <div class="header__link-div">
-                <a href="soutenir.html" class="header__link header__link-button">Soutenir</a>
+                <a href="soutenir.html" class="header__link layout__link-button">Soutenir</a>
             </div>
         </div>
 
@@ -59,7 +59,7 @@
             </h1>
 
             
-            <img src="assets/img/circles_decorations.png" alt="Cercles décoratifs" class="circles_decorations">
+            <img src="assets/img/circles_decorations.png" alt="Cercles décoratifs" class="circles_decorations__hero">
             <h3 class="hero__heading3">Qu’attendez-vous pour accomplir vos objectifs ? 
             </h3>
             <p class="hero__text">Développée par <strong>3 étudiants</strong>, Arquest est conçue pour être au plus près de vos besoins.</p >
@@ -67,8 +67,8 @@
                             <!--METTRE UNE ILLUSTRATION A COTE DU TOUT !!!!!!!!-->
 
 
-            <div class="hero__button-div">
-                <a href="soutenir.html" class="hero__button">Soutenir</a>
+            <div class="soutenir__button-div">
+                <a href="soutenir.html" class="soutenir__button">Soutenir</a>
             </div>
             
             <p class="hero__note">Paiements sécurisés et sans frais supplémentaires</p>
@@ -90,50 +90,20 @@
                 <h2 class="main_function__heading">Social</h2>
                 <p class="main_function__text">Interagissez avec les autres <strong>utilisateurs</strong> pour partager vos réussites quotidiennes*</p>
             </div>
-        <p class="main_function__ast">*Disponible dans la version payante</p>
+        </div>
+        
+        <div class="main_function__ast-div">
+            <p class="main_function__ast">*Disponible dans la version payante</p>
         </div>
 
         <video src="" alt=""></video>
-
-        <!--
-        <div class="tarif-div">
-            <div class="tarif__row1">
-                <p class="tarif__row__heading"></p>
-                <p class="tarif__row__heading">Accès à la messagerie</p>
-                <p class="tarif__row__heading">Cercle d’amis</p>
-                <p class="tarif__row__heading">Item exclusif</p>
-                <p class="tarif__row__heading">Accès à l’agenda</p>
-                <p class="tarif__row__heading">Personnalisation de l’avatar</p>
-                <p class="tarif__row__heading">Quêtes disponibles</p>
-            </div>
-
-            <div class="tarif__row2">
-                <p class="tarif__row__name">Gratuit</p>
-                <div class="tarif__symbol__td"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-            </div>
-
-            <div class="tarif__row3">
-                <p class="tarif__row__name">Payant (1,99€)</p>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-                <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
-            </div>
-        </div>
-        -->
 
         <div class="tarif-div">
             <table class="tarif__tableau">
                 <thead>
                   <tr class="tarif__row1">
                     <th scope="col" class="tarif__row__heading"></th>
+                    <th scope="col" class="tarif__row__heading">Absence des publicités</th>
                     <th scope="col" class="tarif__row__heading">Accès à la messagerie</th>
                     <th scope="col" class="tarif__row__heading">Cercle d’amis</th>
                     <th scope="col" class="tarif__row__heading">Item exclusif</th>
@@ -144,41 +114,45 @@
                 </thead>
                 <tbody>
                   <tr class="tarif__row2">
-                    <th scope="row" class="tarif__row__name">Gratuit</th>
+                    <th scope="row" class="tarif__row__name2"><strong>Arquest</strong></th>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                    <td><code>
+                        <div class="tarif__symbol__td table-end2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                   </tr>
                   <tr class="tarif__row3">
-                    <th scope="row" class="tarif__row__name">Payant (1,99€/mois)</th>
+                    <th scope="row" class="tarif__row__name3"><strong>Arquest⁺</strong> (1,99€/mois)</th>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                    <td><code>
+                        <div class="tarif__symbol__td table-end3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                   </tr>
                 </tbody>
               </table>
         </div>
 
-        <div class="hero__button-div">
-            <a href="soutenir.html" class="hero__button">Soutenir</a>
+        <div class="soutenir__button-div">
+            <a href="soutenir.html" class="soutenir__button">Soutenir</a>
         </div>
 
         <div class="franche_comte-div">
@@ -204,7 +178,7 @@
 
                 <!--Le bouton a les mêmes propriétés que celui du header-->
                 <div class="footer__top__link-div">
-                    <a href="soutenir.html" class="footer__top__link footer__top__link-button">Soutenir</a>
+                    <a href="soutenir.html" class="footer__top__link layout__link-button">Soutenir</a>
                 </div>
 
             </div>
@@ -212,16 +186,19 @@
 
         <div class="footer__bottom">
             <div class="footer__bottom__link-div">
-            <h3><a href="contact.html" class="footer__bottom__link">Contact</a></h3>
-            <h3><a href="apropos.html" class="footer__bottom__link">À propos</a></h3>
-            <h3><a href="mentions.html" class="footer__bottom__link">Mentions légales</a></h3>
+            <h3><a href="contact.html" class="footer__bottom__link layout__link">Contact</a></h3>
+            <h3><a href="apropos.html" class="footer__bottom__link layout__link">À propos</a></h3>
+            <h3><a href="mentions.html" class="footer__bottom__link layout__link">Mentions légales</a></h3>
             
                 <div class="footer__bottom__mention-div">
-                <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard" class="footer__bottom__mention-img">
-                <p class="footer__bottom__mention-line">
-                    Projet réalisé dans le 
-                    cadre d’un exercice pédagogique au 
-                    département MMi de Montbéliard</p>
+                <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link-img">
+                    <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard" class="footer__bottom__mention-img">
+                </a>
+                    <p class="footer__bottom__mention-line">
+                        Projet réalisé dans le 
+                        cadre d’un exercice pédagogique au 
+                        département <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link">MMi de Montbéliard
+                    </a></p>
                 </div> 
             </div> 
 

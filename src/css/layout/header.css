@@ -2,6 +2,8 @@
     top: 0;
     left: 0;
     background-color: var(--grey);
+
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +14,7 @@
 
     z-index: 3;
 }
+
 .header__start {
     padding: 2%;
     width: 10px;
@@ -46,8 +49,3 @@
     color: var(--white);
 }
 
-.header__link-button {
-    padding: 6% 15% 6% 15%;
-    background-color: var(--blue);
-    border-radius: 5px;
-}

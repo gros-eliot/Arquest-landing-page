@@ -1,0 +1,101 @@
+/* Animation colorée "payant" du tableau
+
+
+
+.tarif__row__name3 {
+    animation: 1s ease-in-out 0s
+    infinite alternate colour1;
+}
+
+@keyframes colour1 {
+    0% {
+        color: var(--white);
+    }
+
+    100% {
+        color: var(--purple);
+    }
+}
+*/
+
+
+
+
+.hero__heading2 {
+    animation: 1s ease
+    infinite alternate bounce1; 
+}
+
+@keyframes bounce1 {
+    0% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+
+
+
+/*animation "un jeu" homepage */
+/*
+.hero__heading2 {
+    animation: 4s cubic-bezier(0.1, 2, 0.1, 2)
+     infinite colour2;
+}
+@keyframes colour2 {
+    0% {
+        color: var(--white);
+        text-shadow: 0.1em 0em 0em var(--red),
+    0.1em 0.1em 0em var(--blue);
+    }
+    10% {
+        color: var(--red);
+        text-shadow: 0.1em 0em 0em var(--blue),
+    0.1em 0.1em 0em var(--white);
+    }
+    20% {
+        color: var(--blue);
+        text-shadow: 0.1em 0em 0em var(--white),
+    0.1em 0.1em 0em var(--red);
+    }
+}
+
+*/
+
+
+
+/*liens footer/header animation*/
+.layout__link:hover {
+    color: rgb(129, 129, 129);
+    transition: 200ms ease-in-out;
+}
+
+.layout__link-img:hover {
+    filter: brightness(50%);
+    transition: 200ms ease-in-out;
+}
+
+.footer__socialmedia__link:hover {
+    filter: brightness(80%);
+    transition: 200ms ease-in-out;
+}
+
+
+/* animation hover des boutons*/
+
+.soutenir__button:hover, .layout__link-button:hover  {
+    background-color: rgb(30, 30, 134);
+    color: var(--white);
+    transition: 200ms ease-in-out;
+}
+
+/*animation des card "main function" de la homepage*/
+
+.main_function-div:hover {
+    background-color: var(--black);
+    color: var(--purple);
+    border: 5px solid var(--purple);
+    transition: 500ms ease;
+}
