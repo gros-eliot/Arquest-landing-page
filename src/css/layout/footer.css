@@ -14,7 +14,8 @@ footer {
     /*logo arquest du footer*/
 
     .footer__top__img {
-        width: 300px;
+        min-width: 50px;
+        max-width: 300px;
     }
 
     .footer__top-end {
@@ -94,10 +95,7 @@ footer {
     }
 
 
-    @media (max-width: 900px) {
-        .footer__top__img {
-            width: 150px;
-        }
+    @media (max-width: 800px) {
 
         .footer__bottom__mention-line{
             padding-right: 0%;
@@ -107,3 +105,47 @@ footer {
         }
     }
     
+    @media (max-width: 500px) {
+
+        .footer__top {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer__top-start, .footer__top-end {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer__top__img {
+            width: 200px;
+        }
+
+
+        .footer__mid {
+            text-align: center;
+        }
+
+        .footer__bottom {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding-top: 10%;
+        }
+
+        .footer__bottom__mention-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .layout__link-img {
+            width: 50px;
+        }
+        .footer__bottom__mention-line {
+            text-align: center;
+        }
+    }

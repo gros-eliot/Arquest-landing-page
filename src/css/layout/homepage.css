@@ -121,8 +121,14 @@
 }
 
 .main_function__image {
-    width: 30%;
+    width: 100px;
     margin: 5%;
+}
+
+.main_function__description-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .main_function__heading {
@@ -146,12 +152,44 @@
 .main_function__ast {
     font-style: italic;
     font-size: var(--pc--legende);
-
-    /*
-    grid-column: 3/4;
-    grid-row: 2/3;
-    */
 }
+
+
+@media (max-width: 800px) {
+    .main_function--main-div {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1fr);
+        grid-gap: 0px;
+        margin-top: -0%;
+    }
+
+    .main_function-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        border-top: 5px solid var(--blue);
+        border-radius: 0px;
+        padding: 5%;
+
+        height: 300px;
+    }
+
+    .main_function__description-div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .main_function-div-mobile {
+        border-bottom: 5px solid var(--blue);
+    }
+}
+
+
+
 
 
 
@@ -363,4 +401,11 @@
 
 .franche_comte__img {
     width: 30px;
+}
+
+@media (max-width: 800px) {
+
+    .franche_comte-div {
+        padding-top: 20%;
+    }
 }

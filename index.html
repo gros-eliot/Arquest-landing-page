@@ -40,7 +40,7 @@
 
 
         <div class="header__end">
-            <div class="header__link-div">
+            <div class="header__link-div header__link-mobile">
                 <a href="apropos.html" class="header__link layout__link">À propos</a>
             </div>
 
@@ -52,7 +52,7 @@
     </header>
 
     <main>
-        <div class="header__start-mobile">
+        <div class="header__start-tab">
             <label id="compte_a_rebours2"></label>
                 <script type="text/javascript">
                     var Affiche=document.getElementById("compte_a_rebours2");
@@ -97,6 +97,31 @@
                 </div>
             </div>
 
+
+            <div class="header__start-mobile">
+                <label id="compte_a_rebours3"></label>
+                    <script type="text/javascript">
+                        var Affiche=document.getElementById("compte_a_rebours3");
+                        function Rebour() {
+                        var date1 = new Date();
+                        var date2 = new Date ("Jun 15, 2022 00:00:00");
+                        var sec = (date2 - date1) / 1000;
+                        var n = 24 * 3600;
+                        if (sec > 0) {
+                        j = Math.floor (sec / n);
+                        h = Math.floor ((sec - (j * n)) / 3600);
+                        mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                        sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                        Affiche.innerHTML = "" + j +":"+ h +":"+ mn +":"+ sec;
+                        window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+                        }
+                        tRebour=setTimeout ("Rebour();", 1000);
+                        }
+                        Rebour();
+                    </script>
+            </div>
+
+
             <div class="soutenir__button-div">
                 <a href="soutenir.html" class="soutenir__button">Soutenir</a>
             </div>
@@ -107,18 +132,24 @@
         <div class="main_function--main-div">
             <div class="main_function-div">
                 <img src="assets/img/trophy.png" alt="Trophée" class="main_function__image">
+                <div class="main_function__description-div">
                 <h2 class="main_function__heading">Motivation</h2>
                 <p class="main_function__text">Web app basée sur un système de <strong>récompense</strong> qui vous permettra de vous motiver à <strong>accomplir</strong> les tâches que vous vous fixerez.</p>
+                </div>
             </div>
             <div class="main_function-div">
                 <img src="assets/img/agenda.png" alt="Algenda" class="main_function__image">
+                <div class="main_function__description-div">
                 <h2 class="main_function__heading">Agenda</h2>
                 <p class="main_function__text">Optimisez votre organisation des tâches grâce à un <strong>agenda</strong> personnalisable.</p>
+                </div>
             </div>
-            <div class="main_function-div">
+            <div class="main_function-div main_function-div-mobile">
                 <img src="assets/img/social.png" alt="Social" class="main_function__image">
+                <div class="main_function__description-div">               
                 <h2 class="main_function__heading">Social</h2>
                 <p class="main_function__text">Interagissez avec les autres <strong>utilisateurs</strong> pour partager vos réussites quotidiennes*</p>
+                </div>
             </div>
         </div>
         

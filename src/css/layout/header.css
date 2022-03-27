@@ -63,10 +63,15 @@
     display: none;
 }
 
+.header__start-tab {
+    display: none;
+}
 .header__start-mobile {
     display: none;
 }
-@media (max-width: 700px) {
+
+
+@media (max-width: 800px) {
     .header {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -74,9 +79,6 @@
     }
 
     .header__logo {
-        display: none;
-    }
-    .header__logo-mobile {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -90,7 +92,7 @@
     .header__mid {
         display: flex;
         justify-content: flex-start;
-        padding: 6% 0% 0% 15%;
+        padding: 0% 0% 0% 5%;
     }
 
     .header__end {
@@ -98,7 +100,7 @@
         flex-direction: row;
     }
 
-    .header__start-mobile {
+    .header__start-tab {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
@@ -111,3 +113,48 @@
     }
 }
 
+
+@media (max-width: 500px) {
+
+    .header__logo {
+        display: none;
+    }
+    .header__logo-mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 40px;
+    }
+
+    .header__mid {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 4% 0% 0% 15%;
+    }
+
+    .header__start-mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+    }
+
+    .hero {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    #compte_a_rebours3 {
+        font-size: var(--pc--header4);
+        font-family: 'Press Start 2P', sans-serif;
+    }
+
+    .header__start-tab {
+        display: none;
+    }
+    .header__link-mobile {
+        display: none;
+    }
+}
