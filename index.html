@@ -33,8 +33,10 @@
                 </script>
         </div>
 
-
-        <a href="/" class="header__mid"><img src="assets/logo/arquest_full.svg" alt="Arquest logo" class="header__logo"></a>
+        <div class="header__mid">
+            <a href="/"><img src="assets/logo/arquest_full.svg" alt="Arquest logo" class="header__logo"></a>
+            <a href="/"><img src="assets/logo/arquest_simple.svg" alt="Arquest logo" class="header__logo-mobile"></a>
+        </div>
 
 
         <div class="header__end">
@@ -43,29 +45,57 @@
             </div>
 
             <div class="header__link-div">
-                <a href="soutenir.html" class="header__link layout__link-button">Soutenir</a>
+                <a href="soutenir.html" class="layout__link layout__link-button">Soutenir</a>
             </div>
         </div>
 
     </header>
 
     <main>
+        <div class="header__start-mobile">
+            <label id="compte_a_rebours"></label>
+                <script type="text/javascript">
+                    var Affiche=document.getElementById("compte_a_rebours");
+                    function Rebour() {
+                    var date1 = new Date();
+                    var date2 = new Date ("Jun 15, 2022 00:00:00");
+                    var sec = (date2 - date1) / 1000;
+                    var n = 24 * 3600;
+                    if (sec > 0) {
+                    j = Math.floor (sec / n);
+                    h = Math.floor ((sec - (j * n)) / 3600);
+                    mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                    sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                    Affiche.innerHTML = "" + j +":"+ h +":"+ mn +":"+ sec;
+                    window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+                    }
+                    tRebour=setTimeout ("Rebour();", 1000);
+                    }
+                    Rebour();
+                </script>
+        </div>
+
         <div class="hero">
-            <h1 class="hero__heading1">
-                Faites de votre vie
-            </h1>
-            <h1 class="hero__heading2">
-                un jeu
-            </h1>
+            <div class="hero__grid">
+                <div class="hero__start">
+                    <h1 class="hero__heading1">
+                        Faites de votre vie
+                    </h1>
+                    <h1 class="hero__heading2">
+                        un jeu
+                    </h1>
 
-            
-            <img src="assets/img/circles_decorations.png" alt="Cercles décoratifs" class="circles_decorations__hero">
-            <h3 class="hero__heading3">Qu’attendez-vous pour accomplir vos objectifs ? 
-            </h3>
-            <p class="hero__text">Développée par <strong>3 étudiants</strong>, Arquest est conçue pour être au plus près de vos besoins.</p >
+                    
+                    <img src="assets/img/circles_decorations.png" alt="Cercles décoratifs" class="circles_decorations__hero">
+                    <h3 class="hero__heading3">Qu’attendez-vous pour accomplir vos objectifs ? 
+                    </h3>
+                    <p class="hero__text">Développée par <strong>3 étudiants</strong>, Arquest est conçue pour être au plus près de vos besoins.</p >
+                </div>
 
-                            <!--METTRE UNE ILLUSTRATION A COTE DU TOUT !!!!!!!!-->
-
+                <div class="hero__end">
+                    <img src="assets/img/rocket.png" alt="Fusée" class="hero__rocket">
+                </div>
+            </div>
 
             <div class="soutenir__button-div">
                 <a href="soutenir.html" class="soutenir__button">Soutenir</a>
@@ -107,6 +137,7 @@
                     <th scope="col" class="tarif__row__heading">Accès à la messagerie</th>
                     <th scope="col" class="tarif__row__heading">Cercle d’amis</th>
                     <th scope="col" class="tarif__row__heading">Item exclusif</th>
+                    <th scope="col" class="tarif__row__heading">Quêtes quotidiennes</th>
                     <th scope="col" class="tarif__row__heading">Accès à l’agenda</th>
                     <th scope="col" class="tarif__row__heading">Personnalisation de l’avatar</th>
                     <th scope="col" class="tarif__row__heading">Quêtes disponibles</th>
@@ -116,39 +147,102 @@
                   <tr class="tarif__row2">
                     <th scope="row" class="tarif__row__name2"><strong>Arquest</strong></th>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-end2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                    <td><code>
+                        <div class="table-end table-end2">3 disponibles</div></code></td>
                   </tr>
                   <tr class="tarif__row3">
-                    <th scope="row" class="tarif__row__name3"><strong>Arquest⁺</strong> (1,99€/mois)</th>
+                    <th scope="row" class="tarif__row__name3"><strong>Arquest⁺</strong></th>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
                     <td><code>
-                        <div class="tarif__symbol__td table-end3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                        <div class="table-style-3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div></code></td>
+                    <td><code>
+                        <div class="table-end table-end3">Illimité</div></code></td>
                   </tr>
                 </tbody>
               </table>
+
+              <div class="tarif__mobile">
+
+                  <div class="tarif__mobile__column1">
+                    <div class="tarif__mobile__headings-div">
+                    </div>
+                    <div class="tarif__mobile__headings-div">
+                        <p class="tarif__mobile__headings">Absence des publicités</p>
+                    </div>
+                    <div class="tarif__mobile__headings-div">
+                        <p class="tarif__mobile__headings">Accès à la messagerie</p>
+                    </div>
+                    <div class="tarif__mobile__headings-div">
+                        <p class="tarif__mobile__headings">Cercle d’amis</p>
+                    </div>
+                    <div class="tarif__mobile__headings-div">
+                        <p class="tarif__mobile__headings">Item exclusif</p>
+                    </div>
+                    <div class="tarif__mobile__headings-div">
+                        <p class="tarif__mobile__headings">Accès à l’agenda</p>
+                    </div>
+                    <div class="tarif__mobile__headings-div">
+                        <p class="tarif__mobile__headings">Personnalisation de l’avatar</p>
+                    </div>
+                    <div class="tarif__mobile__headings-div">
+                        <p class="tarif__mobile__headings">Quêtes disponibles</p>
+                    </div>
+                  </div>
+
+                  <div class="tarif__mobile__column2">
+                      <div class="table__mobile__heading2"><img src="assets/logo/arquest_simple.svg" src="Arquest" class="tarif__arquest-logo"></div>
+                      <div class="table__mobile__style2 tarif-start2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div>
+                      <div class="table__mobile__style2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div>
+                      <div class="table__mobile__style2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div>
+                      <div class="table__mobile__style2"><img src="assets/logo/croix.svg" alt="Non disponible" class="tarif__symbol"></div>
+                      <div class="table__mobile__style2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
+                      <div class="table__mobile__style2"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
+                      <div class="tarif-end table__mobile__end2">3 disponibles</div>
+                  </div>
+                  
+                  <div class="tarif__mobile__column3">
+                    <div class="table__mobile__heading3"><img src="assets/logo/arquest_simple.svg" src="Arquest" class="tarif__arquest-logo"><p class="tarif__arquest-logo-plus">+</p></div>
+                    <div class="table__mobile__style3 tarif-start3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
+                    <div class="table__mobile__style3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
+                    <div class="table__mobile__style3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
+                    <div class="table__mobile__style3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
+                    <div class="table__mobile__style3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
+                    <div class="table__mobile__style3"><img src="assets/logo/coche.svg" alt="Disponible" class="tarif__symbol"></div>
+                    <div class="tarif-end table__mobile__end3">Illimité</div>
+                  </div>
+              </div>
+
+
+
+
+              <div class="tarif__ast">
+                <p>Arquest+ (Arquest premium) : 1,99€/mois</p>
+              </div>
+
         </div>
 
         <div class="soutenir__button-div">
@@ -157,54 +251,55 @@
 
         <div class="franche_comte-div">
             <img src="assets/img/french-flag.png" alt="Drapeau français" class="franche_comte__img">
-            <h3 class="franche_comte__line">Site réalisé dans la région de Franche-Comté</h3>
+            <h3 class="franche_comte__line">Site réalisé en Franche-Comté</h3>
         </div>
     </main>
 
 
     <footer>
         <div class="footer__top">
-            <img src="assets/logo/arquest_full.svg" alt="Logo Arquest" class="footer__top__img">
+            <div class="footer__top-start">
+                <img src="assets/logo/arquest_full.svg" alt="Logo Arquest" class="footer__top__img">
+            </div>
 
             <div class="footer__top-end">
                 <ul class="listUnstyled footer__socialmedia">
-                    <li><a href="https://www.facebook.com/" class="footer__socialmedia__link"><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest" class="footer__socialmedia__link"></a></li>
-                    <li><a href="https://www.instagram.com/" class="footer__socialmedia__link"><img src="assets/logo/instagram.svg" alt="Instagram d'Arquest" class="footer__socialmedia__link"></a></li>
-                    <li><a href="https://twitter.com/" class="footer__socialmedia__link"><img src="assets/logo/twitter.svg" alt="Twitter d'Arquest" class="footer__socialmedia__link"></a></li>
-                    <!--<li><a href="https://www.linkedin.com/" class="footer__socialmedia__link"><img src="assets/logo/linkedin.svg" alt="Linkedin" class="footer__socialmedia__link"></a></li>
-                    -->
+                    <li><a href="https://www.facebook.com/"><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="assets/logo/instagram.svg" alt="Instagram d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://twitter.com/"><img src="assets/logo/twitter.svg" alt="Twitter d'Arquest" class="footer__socialmedia__link"></a></li>
                 </ul>
-
-
-                <!--Le bouton a les mêmes propriétés que celui du header-->
-                <div class="footer__top__link-div">
-                    <a href="soutenir.html" class="footer__top__link layout__link-button">Soutenir</a>
+                <!--bouton layout (header & footer) : soutenir-->
+                <div class="footer__top__layout-link-div">
+                    <a href="soutenir.html" class="layout__link layout__link-button">Soutenir</a>
                 </div>
 
             </div>
         </div>
 
-        <div class="footer__bottom">
-            <div class="footer__bottom__link-div">
-            <h3><a href="contact.html" class="footer__bottom__link layout__link">Contact</a></h3>
-            <h3><a href="apropos.html" class="footer__bottom__link layout__link">À propos</a></h3>
-            <h3><a href="mentions.html" class="footer__bottom__link layout__link">Mentions légales</a></h3>
-            
-                <div class="footer__bottom__mention-div">
-                <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link-img">
-                    <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard" class="footer__bottom__mention-img">
-                </a>
-                    <p class="footer__bottom__mention-line">
-                        Projet réalisé dans le 
-                        cadre d’un exercice pédagogique au 
-                        département <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link">MMi de Montbéliard
-                    </a></p>
-                </div> 
-            </div> 
+        <div class="footer__mid">
+            <div class="footer__mid__link-div">
+            <h3><a href="contact.html" class="layout__link footer__mid__link">Contact</a></h3>
+            <h3><a href="apropos.html" class="layout__link footer__mid__link">À propos</a></h3>
+            <h3><a href="mentions.html" class="layout__link footer__mid__link">Mentions légales</a></h3>
+        </div>
 
-            <div class="footer__bottom__copyright-div">
-                <p class="footer__bottom__copyright">France</p>
-                <p class="footer__bottom__copyright">Arquest, 2022</p>
+        <div class="footer__bottom">
+            <div class="footer__bottom__mention-div">
+                <a href="http://mmimontbeliard.com/" class="footer__mmi-link">
+                    <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard" class="layout__link-img">
+                </a>
+                <p class="footer__bottom__mention-line">
+                    Projet réalisé dans le 
+                    cadre d’un exercice pédagogique au 
+                    département <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link">MMi de Montbéliard
+                </a></p>
+            </div> 
+                
+
+                <div class="footer__bottom__copyright-div">
+                    <p class="footer__bottom__copyright">France</p>
+                    <p class="footer__bottom__copyright">Arquest, 2022</p>
+                </div>
             </div>
         </div>
 

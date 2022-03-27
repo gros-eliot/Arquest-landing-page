@@ -4,36 +4,51 @@
   box-sizing: border-box;
 }
 
-/* GENERALITES (POLICES ET COULEUR) */
 html {
     scroll-behavior: smooth;
   }
 
+/* GENERALITES (POLICES ET COULEUR) */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--black);
-    color: var(--white);
-    font-size: var(--pc--body);
-    margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  margin-top: 100px;
 }
 
-.body__homepage {
-    background-image: url(../../../assets/img/space_bg.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: 50% auto;
+@media (min-width: 1280px) {
+  body {font-size: var(--pc--body);}
+  h1 {font-size: var(--pc--header1);}
+  h2 {font-size: var(--pc--header2);}
+  h3 {font-size: var(--pc--header3);}
 }
-h1 {
-    font-size: var(--pc--header1);
+/*
+@media (max-width: 768px) {
+  body {font-size: var(--tab--body);}
+  h1 {font-size: var(--tab--h1);}
+  h2 {font-size: var(--tab--h2);}
+  h3 {font-size: var(--tab--h3);}
 }
 
-h2 {
-    font-size: var(--pc--header2);
+@media (max-width: 640px) {
+  body {font-size: var(--tel--body);}
+  h1 {font-size: var(--tel--header1);}
+  h2 {font-size: var(--tel--header2);}
+  h3 {font-size: var(--tel--header3);}
 }
+*/
 
-h3 {
-    font-size: var(--pc--header3);
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
