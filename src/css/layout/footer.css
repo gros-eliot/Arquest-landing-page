@@ -14,7 +14,7 @@ footer {
     /*logo arquest du footer*/
 
     .footer__top__img {
-        min-width: 100px;
+        width: 300px;
     }
 
     .footer__top-end {

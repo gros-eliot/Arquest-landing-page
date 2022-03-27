@@ -80,7 +80,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 45px;
+        width: 40px;
     }
 
     .header__start {
@@ -90,7 +90,7 @@
     .header__mid {
         display: flex;
         justify-content: flex-start;
-        padding: 5% 2% 2% 10%;
+        padding: 6% 0% 0% 15%;
     }
 
     .header__end {
@@ -102,6 +102,12 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
+        padding: 3% 0% 3% 3%;
+    }
+
+    #compte_a_rebours2 {
+        font-size: var(--pc--header4);
+        font-family: 'Press Start 2P', sans-serif;
     }
 }
 
