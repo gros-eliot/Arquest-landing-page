@@ -1,0 +1,79 @@
+/* FOND DE LA PAGE SUPPORT*/
+
+.support__homepage {
+    background-color: var(--blue);
+}
+
+.support__homepage {
+    background-image: url(../../../assets/img/arquest_background.svg);
+    background-size:100%;
+    background-position-y: top;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*hero de la page support*/
+
+.support-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0% 3% 5% 3%;    
+}
+
+.support-hero__start {
+    padding: 0% 0% 0% 15%;
+}
+    .support-hero__start__heading {
+        text-transform: uppercase;
+    }
+
+.support-hero__end {
+    padding: 0% 0% 0% 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .support-hero__end__img {
+        width: 40%;
+    }
+    .support-hero__end__txt {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        padding: 1% 35% 1% 35%;
+    }
+
+
+.support-hero2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+}
+    .support-hero__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .support-hero__bottom-text {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100%;
+        text-align: center;
+        margin-top: -3%;
+    }
+
+    .support-hero__bottom-text__item {
+        padding: 10%;
+    }
+
+    .support-hero__bottom-img-div {
+        padding: 3%
+    }
+
+    .support-hero__bottom-img {
+        width:100%;
+    }

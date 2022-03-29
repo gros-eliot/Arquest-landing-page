@@ -16,6 +16,8 @@
 @import url(layout/header.css);
 @import url(layout/footer.css);
 @import url(layout/homepage.css);
+@import url(layout/support.css);
+
 
 /*components*/
 @import url(components/button.css);

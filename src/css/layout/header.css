@@ -141,6 +141,10 @@
         padding: 10%;
     }
 
+    .header__end {
+        padding-right: 5%;
+    }
+
     .hero {
         padding-top: 20%;
         padding-bottom: 20%;
