@@ -16,7 +16,7 @@ body {
   margin-top: 100px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   body {font-size: var(--pc--body);}
   h1 {font-size: var(--pc--header1);}
   h2 {font-size: var(--pc--header2);}

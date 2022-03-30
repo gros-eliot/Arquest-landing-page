@@ -10,7 +10,6 @@
     background-position-y: top;
     background-position-x: right;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /*hero de la page support*/
@@ -18,7 +17,7 @@
 .support-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0% 3% 5% 3%;    
+    padding: 5% 3% 5% 3%;    
 }
 
 .support-hero__start {
@@ -37,7 +36,7 @@
 }
 
     .support-hero__end__img {
-        width: 40%;
+        width: 20vw;
     }
     .support-hero__end__txt {
         text-transform: uppercase;
@@ -75,5 +74,5 @@
     }
 
     .support-hero__bottom-img {
-        width:100%;
+        width: 100%;
     }
