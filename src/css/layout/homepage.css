@@ -25,19 +25,17 @@
     .hero {
         display: flex;
         flex-direction: column;
-        margin: 4%;
+        margin: -2% 4% 4% 4%;
     }
     
 
 
     .hero__heading1 {
-        font-size: var(--pc--header2);
         font-weight: bold;
     }
 
     .hero__heading2 {
         margin-top: -1.8%;
-        font-size: var(--pc--game-heading);
         font-family: 'Press Start 2P', sans-serif;
         font-weight: normal;
 
@@ -48,27 +46,6 @@
     .hero__heading3, .hero__text {
         margin-top: -0.5%;
     }
-
-    .hero__rocket {
-        display:none;
-        width: 130px;
-        animation: 20s linear infinite rocket-rotate;
-        transform-origin: 300% -100%;
-        
-    }
-
-    @keyframes rocket-rotate {
-        from {transform: rotate(-70deg);}
-        to {transform: rotate(20deg);}
-
-        0% {opacity: 0%;}
-        10% {opacity: 100%;}
-        60% {opacity: 100%;}
-        70% {opacity: 0%;}
-        100%{opacity:0%}
-
-    }
-
 
     .hero__note {
         text-align: center;

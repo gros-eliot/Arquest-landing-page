@@ -30,14 +30,14 @@ body {
   h3 {font-size: var(--tab--h3);}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 400px) {
   body {font-size: var(--tel--body);}
   h1 {font-size: var(--tel--header1);}
   h2 {font-size: var(--tel--header2);}
   h3 {font-size: var(--tel--header3);}
 }
-*/
 
+*/
 
 
 

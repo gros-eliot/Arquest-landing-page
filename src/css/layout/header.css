@@ -54,7 +54,6 @@
 }
 
 .header__link {
-    font-size: var(--pc--header4);
     text-decoration: none;
     color: var(--white);
 }

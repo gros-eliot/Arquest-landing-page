@@ -17,7 +17,7 @@
 .support-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5% 3% 5% 3%;    
+    padding: 0% 3% 1% 3%;    
 }
 
 .support-hero__start {
@@ -28,7 +28,7 @@
     }
 
 .support-hero__end {
-    padding: 0% 0% 0% 0%;
+    padding: 10% 0% 0% 0%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -47,8 +47,6 @@
 
 
 .support-hero2 {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
     max-width: 100%;
 }
     .support-hero__bottom {
@@ -69,10 +67,31 @@
         padding: 10%;
     }
 
-    .support-hero__bottom-img-div {
+    .support-hero__bottom-timeline-div {
         padding: 3%
     }
 
-    .support-hero__bottom-img {
+    .support-hero__bottom-timeline {
         width: 100%;
     }
+
+    .support-hero__ast {
+        font-weight: 300;
+        font-style: italic;
+        text-align: end;
+    }
+    .support-hero__ast-div {
+        padding: 1% 3% 1% 3%;
+    }
+
+
+
+
+/* FORMULAIRE DE PAIEMENT */
+
+.support-form__captcha {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+}

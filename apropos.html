@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel='stylesheet' href='src/css/style.css'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquest | À propos</title>
 </head>
 <body class="">
-    
+
+    <header class="header">
+
+        <div class="header__start">
+            <label id="compte_a_rebours"></label>
+                <script type="text/javascript">
+                    var Affiche=document.getElementById("compte_a_rebours");
+                    function Rebour() {
+                    var date1 = new Date();
+                    var date2 = new Date ("Jun 15, 2022 00:00:00");
+                    var sec = (date2 - date1) / 1000;
+                    var n = 24 * 3600;
+                    if (sec > 0) {
+                    j = Math.floor (sec / n);
+                    h = Math.floor ((sec - (j * n)) / 3600);
+                    mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                    sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                    Affiche.innerHTML = "" + j +":"+ h +":"+ mn +":"+ sec;
+                    window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+                    }
+                    tRebour=setTimeout ("Rebour();", 1000);
+                    }
+                    Rebour();
+                </script>
+        </div>
+
+        <div class="header__mid">
+            <a href="/"><img src="assets/logo/arquest_full.svg" alt="Arquest logo" class="header__logo"></a>
+            <a href="/"><img src="assets/logo/arquest_simple.svg" alt="Arquest logo" class="header__logo-mobile"></a>
+        </div>
+
+
+        <div class="header__end">
+            <div class="header__link-div header__link-mobile">
+                <a href="apropos.html" class="header__link layout__link">À propos</a>
+            </div>
+
+            <div class="header__link-div">
+                <a href="soutenir.html" class="layout__link layout__link-button">Soutenir</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+    <h1>Qui sommes-nous ?</h1>
+    <p>Arquest est un projet mené par trois étudiants en première année au département des Métiers du Multimédia et de l’Internet à l’IUT de Montbéliard. 
+     Le projet a vu le jour dans un cadre pédagogique, l’objectif était de réaliser une WebApp fonctionnant sur un concept préalablement réfléchis.
+     A partir de cela, notre équipe a décidé de créer Arquest : une WebApp mélangeant le moderne et le retro, afin de  motiver ses utilisateurs à remplir leurs objectifs de manière organisés.</p>
+
+     <h2>Designer</h2>
+     <p>Étudiant en première année de MMI à Montbéliard, c’est le pilier de l’univers visuel d’Arquest. Créatif, il s’est occupé d’établir la direction artistique de notre web app. 
+    Il est très fréquement en contact avec ces deux autres collègues : le développeur pour s’assurer que ses idées soient réalisable, et la chargé de com’ afin de mettre ses idées sur le papier !</p>
+
+    <h3>Matthieu Hoareau</h3>
+    <h4>18 ans</h4>
+
+    <h2>Développeur</h2>
+    <p>Étudiant en première année au département MMI de Montbéliard. C’est à lui que l’on doit l’ensemble des lignes de code du site web et de l’application.
+     En étroite collaboration avec le designer, il s’est occupé de la mise en ligne d’Arquest tout en s’assurant que le design pensé soit correctement appliqué.</p>
+
+    <h3>Eliot Gros</h3>
+    <h4>19 ans</h4>  
+
+    <h2>Communication</h2>
+    <p>Étudiante  en première année au département MMI de Montbéliard, c’est grâce à elle qu’Arquest peut exister. 
+    Créative et curieuse, elle se tient au courant des tendances afin qu’Arquest puisse avoir de la visibilité !
+    Elle travail notamment avec le designer afin que ses idées soient matérialisées et que ses actions puissent devenir plus concrètes.</p>
+
+    <h3>Héléna Jaegle</h3>
+    <h4>19 ans</h4>
+
+    </main>
+
+    <footer>
+        <div class="footer__top">
+            <div class="footer__top-start">
+                <img src="assets/logo/arquest_full.svg" alt="Logo Arquest" class="footer__top__img">
+            </div>
+
+            <div class="footer__top-end">
+                <ul class="listUnstyled footer__socialmedia">
+                    <li><a href="https://www.facebook.com/"><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="assets/logo/instagram.svg" alt="Instagram d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://twitter.com/"><img src="assets/logo/twitter.svg" alt="Twitter d'Arquest" class="footer__socialmedia__link"></a></li>
+                </ul>
+                <!--bouton layout (header & footer) : soutenir-->
+                <div class="footer__top__layout-link-div">
+                    <a href="soutenir.html" class="layout__link layout__link-button">Soutenir</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer__mid">
+            <div class="footer__mid__link-div">
+            <h3><a href="contact.html" class="layout__link footer__mid__link">Contact</a></h3>
+            <h3><a href="apropos.html" class="layout__link footer__mid__link">À propos</a></h3>
+            <h3><a href="mentions.html" class="layout__link footer__mid__link">Mentions légales</a></h3>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom__mention-div">
+                <a href="http://mmimontbeliard.com/" class="footer__mmi-link">
+                    <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard" class="layout__link-img">
+                </a>
+                <p class="footer__bottom__mention-line">
+                    Projet réalisé dans le 
+                    cadre d’un exercice pédagogique au 
+                    département <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link">MMi de Montbéliard
+                </a></p>
+            </div> 
+                
+
+            <div class="footer__bottom__copyright-div">
+                <p class="footer__bottom__copyright">France</p>
+                <p class="footer__bottom__copyright">Arquest, 2022</p>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>
