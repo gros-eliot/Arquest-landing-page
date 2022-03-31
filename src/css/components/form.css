@@ -172,10 +172,40 @@
 
 /* CHECKBOXs*/
 
-.support-form__checkbox-div {
-    
+.support-form__conditions__checkbox-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 1%;
+    gap: 1%;
 }
 
+/*bouton valider*/
+.support-form__button-send-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10% 2% 2% 2%;
+}
+
+.support-form__button-send {
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 2% 10% 2% 10%;
+    border-radius: 10px;
+}
+
+.support-form__securised-mention {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.support-form__ast {
+    font-size: var(--pc--legende);
+    font-style: italic;
+}
 
 
 /*================================*/

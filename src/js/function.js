@@ -69,6 +69,57 @@ btnTypeOfCard3.addEventListener('click', function() {
 })
 
 
+
+
+// FORMULAIRE REGISTER : CHOIX DE LA CARTE
+//============================================
+//Boutons pour afficher le formulaire : CB
+//============================================
+var btnTypeOfCard4 = document.getElementById('typeOfCardImg4');
+var formPaymentPart2 = document.getElementById('SupportFormPaymentPart2');
+
+btnTypeOfCard4.addEventListener('click', function() {
+  btnTypeOfCard5.classList.remove('activated_typeOfCard');
+  btnTypeOfCard6.classList.remove('activated_typeOfCard');
+
+  btnTypeOfCard4.classList.add('activated_typeOfCard');
+  formPaymentPart2.classList.add('visible_PaymentForm');
+  formPaymentPart2.classList.remove('invisible_PaymentForm');
+})
+
+
+//============================================
+//Boutons pour afficher le formulaire : Visa
+//============================================
+var btnTypeOfCard5 = document.getElementById('typeOfCardImg5');
+
+btnTypeOfCard5.addEventListener('click', function() {
+  btnTypeOfCard4.classList.remove('activated_typeOfCard');
+  btnTypeOfCard6.classList.remove('activated_typeOfCard');
+
+  btnTypeOfCard5.classList.add('activated_typeOfCard');
+  formPaymentPart2.classList.add('visible_PaymentForm');
+  formPaymentPart2.classList.remove('invisible_PaymentForm');
+})
+
+//============================================
+//Boutons pour afficher le formulaire : Mastercard
+//============================================
+var btnTypeOfCard6 = document.getElementById('typeOfCardImg6');
+
+btnTypeOfCard6.addEventListener('click', function() {
+  btnTypeOfCard4.classList.remove('activated_typeOfCard');
+  btnTypeOfCard5.classList.remove('activated_typeOfCard');
+
+  btnTypeOfCard6.classList.add('activated_typeOfCard');
+  formPaymentPart2.classList.add('visible_PaymentForm');
+  formPaymentPart2.classList.remove('invisible_PaymentForm');
+})
+
+
+
+//
+
 // Boutons des montants
 
 var FormPriceButtonOthers = document.getElementById('priceOther');
