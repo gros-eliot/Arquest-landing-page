@@ -1,0 +1,25 @@
+.mentions__content {
+    margin: 2% 10% 2% 10%;
+}
+
+.mentions__padding-div {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.mentions__bigpadding-div {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.mentions__content a {
+    color: var(--purple);
+}
+
+.mentions__background {
+    background-image: url(../../../assets/img/arquest_background2.svg);
+    background-size:100%;
+    background-position-y: top;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel='stylesheet' href='src/css/style.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquest | Accueil</title>
+</head>
+<body class="mentions__background">
+    <header class="header">
+
+        <div class="header__start">
+            <label id="compte_a_rebours"></label>
+                <script type="text/javascript">
+                    var Affiche=document.getElementById("compte_a_rebours");
+                    function Rebour() {
+                    var date1 = new Date();
+                    var date2 = new Date ("Jun 15, 2022 00:00:00");
+                    var sec = (date2 - date1) / 1000;
+                    var n = 24 * 3600;
+                    if (sec > 0) {
+                    j = Math.floor (sec / n);
+                    h = Math.floor ((sec - (j * n)) / 3600);
+                    mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                    sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                    Affiche.innerHTML = "" + j +":"+ h +":"+ mn +":"+ sec;
+                    window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+                    }
+                    tRebour=setTimeout ("Rebour();", 1000);
+                    }
+                    Rebour();
+                </script>
+        </div>
+
+        <div class="header__mid">
+            <a href="/"><img src="assets/logo/arquest_full.svg" alt="Arquest logo" class="header__logo"></a>
+            <a href="/"><img src="assets/logo/arquest_simple.svg" alt="Arquest logo" class="header__logo-mobile"></a>
+        </div>
+
+
+        <div class="header__end">
+            <div class="header__link-div header__link-mobile">
+                <a href="apropos.html" class="header__link layout__link">À propos</a>
+            </div>
+
+            <div class="header__link-div">
+                <a href="soutenir.html" class="layout__link layout__link-button">Soutenir</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="otherpage-margin">
+        <h1 class="otherpage__title">MENTIONS LEGALES</h1>
+        <p>Cette page décrit les mentions légales qui vont s’imposer à tous les utilisateurs visitants ce site. En y naviguant, vous vous acquittez à les respecter. A prendre en compte que les mentions légales peuvent être changées à tout instant, c’est pour cela que nous vous convions à examiner assidûment. </p>
+        
+        <div class="mentions__content">
+            <div class="mentions__padding-div">
+                <h3>Responsables éditorial & légal </h3>
+                <p>Nom de la strucutre - Arquest </p>
+                <p>Représentée par - Matthieu Hoareau, Eliot Gros, Héléna Jaegle </p>
+                <p>E-mail - <a href="mailto:arquest@gmail.com">arquest@gmail.com</a></p>
+            </div>
+
+            <div class="mentions__bigpadding-div">
+                <h3>Editeur de site</h3>
+                <p>IUT Belfort-Montbéliard campus de Montbéliard </p>
+                <p>BUT Métiers du Multimédia et de l’internet </p>
+                <p>19 Av. du Maréchal Juin, 90016 Belfort</p>
+            </div>
+            
+            <div class="mentions__padding-div">
+                <p>Représenté par les étudiants de première année :</p>
+                <p>JAEGLE Héléna </p>
+                <p>HOAREAU Matthieu </p>
+                <p>GROS Eliot </p>
+            </div>
+                
+            <div class="mentions__padding-div">
+                <p>Tuteur légal des étudiants - David Malsot </p>
+                <p>Mail: <a href="mailto:david@malsot.com">david@malsot.com</a></p>
+            </div>  
+        
+            <div class="mentions__bigpadding-div">
+            <h3>Hébergeur</h3>
+            <p>Nom de la structure - Infomaniak & Netlify</p>
+        
+            <p>Representée par - Boris Siegenthaler (Infomaniak) & Chris McCraw (Netlify)</p>
+                
+            <p>Adresse Infomaniak - Rue Eugène-Marziano 25</p>
+            <p>1227 Les Acacias</p>
+            <p>Netlify - 2325 3rd Street, Suite 296, San Francisco, California 94107.</p>
+            </div>
+
+            <div class="mentions__bigpadding-div">
+            <h2>Conditions générales de vente</h2>
+            <p>Le site est la propriété de l’IUT de Montbéliard en sa totalité, ainsi que l'ensemble des droits le concernant. Toute reproduction, intégrale ou partielle, est systématiquement soumise a l'autorisation des propriétaires. Toutefois, les liaisons du type hypertextes vers le site sont autorisées sans demandes spécifiques.</p>
+            <p>Les utilisateurs reconnaîssent avoir pris connaissance, au moment de la passation au service premium, des conditions particulières de vente énoncées sur cet écran et déclare expressément les accepter sans réserve. Les conditions générales de vente régissent les relations contractuelles entre Arquest et ses utilisateurs, les deux parties les acceptant sans réserve. Ces conditions générales de vente prévaudront sur toutes autres conditions figurant dans tout autre document, sauf dérogation préalable, expresse et écrite. </p>    
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer__top">
+            <div class="footer__top-start">
+                <img src="assets/logo/arquest_full.svg" alt="Logo Arquest" class="footer__top__img">
+            </div>
+
+            <div class="footer__top-end">
+                <ul class="listUnstyled footer__socialmedia">
+                    <li><a href="https://www.facebook.com/"><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="assets/logo/instagram.svg" alt="Instagram d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://twitter.com/"><img src="assets/logo/twitter.svg" alt="Twitter d'Arquest" class="footer__socialmedia__link"></a></li>
+                </ul>
+                <!--bouton layout (header & footer) : soutenir-->
+                <div class="footer__top__layout-link-div">
+                    <a href="soutenir.html" class="layout__link layout__link-button">Soutenir</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer__mid">
+            <div class="footer__mid__link-div">
+            <h3><a href="contact.html" class="layout__link footer__mid__link">Contact</a></h3>
+            <h3><a href="apropos.html" class="layout__link footer__mid__link">À propos</a></h3>
+            <h3><a href="mentions.html" class="layout__link footer__mid__link">Mentions légales</a></h3>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom__mention-div">
+                <a href="http://mmimontbeliard.com/" class="footer__mmi-link">
+                    <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard" class="layout__link-img">
+                </a>
+                <p class="footer__bottom__mention-line">
+                    Projet réalisé dans le 
+                    cadre d’un exercice pédagogique au 
+                    département <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link">MMi de Montbéliard
+                </a></p>
+            </div> 
+                
+
+            <div class="footer__bottom__copyright-div">
+                <p class="footer__bottom__copyright">France</p>
+                <p class="footer__bottom__copyright">Arquest, 2022</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
