@@ -1,0 +1,12 @@
+.otherpage__title {
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
+.otherpage-margin {
+    margin: 2%;
+}
+
+.about__card__avatar {
+    width: 100px;
+}
