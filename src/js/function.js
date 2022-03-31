@@ -130,11 +130,3 @@ FormPriceButtonOthers.addEventListener('click', function() {
   InputOtherPrice.classList.add('visible_OtherPriceInput');
   InputOtherPrice.classList.remove('invisible_OtherPriceInput');
 })
-
-var FormPriceButton = document.getElementById('priceButton');
-
-FormPriceButton.addEventListener('click', function() {
-  FormPriceButtonOthers.classList.remove('enabled__price-btn');
-  InputOtherPrice.classList.add('invisible_OtherPriceInput');
-  InputOtherPrice.classList.remove('visible_OtherPriceInput');
-})
