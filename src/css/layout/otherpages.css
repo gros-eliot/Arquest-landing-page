@@ -4,9 +4,14 @@
 }
 
 .otherpage-margin {
-    margin: 2%;
+    margin: 4%;
+    margin-top: 10%;
 }
 
 .about__card__avatar {
     width: 100px;
+}
+
+.otherpage__introduction {
+    padding: 0% 5% 1% 5%;
 }

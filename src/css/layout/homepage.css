@@ -39,11 +39,17 @@
 
     .hero__heading2 {
         margin-top: -1.8%;
+        margin-left: 3%;
         font-family: 'Press Start 2P', sans-serif;
         font-weight: normal;
+        font-size: var(--pc--game-heading);
 
         text-shadow: 0.1em 0em 0em var(--red),
         0.1em 0.1em 0em var(--blue);
+    }
+
+    .hero__introduction {
+        margin-left: 3%;
     }
 
     .hero__heading3, .hero__text {
