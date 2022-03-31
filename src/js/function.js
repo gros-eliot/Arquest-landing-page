@@ -1,14 +1,89 @@
-var btn = document.querySelector('.support-form__title1');
-var form = document.querySelector('.support-form');
+/**
+ * Page soutenir.html
+ */
+// Boutons pour changer d'onglet
+var btnSignin = document.getElementById('toggleSignin');
+var btnRegister = document.getElementById('toggleRegister');
 
-btn.addEventListener('click', updateBtn);
+// Formulaires connexion/inscription
+var formSignin = document.getElementById('signin');
+var formRegister = document.getElementById('register');
 
-function updateBtn() {
-  if (btn.value === 'Démarrer la machine') {
-    
-    txt.textContent = 'La machine est démarrée !';
-  } else {
-    btn.value = 'Démarrer la machine';
-    txt.textContent = 'La machine est arrêtée.';
-  }
-}
+btnSignin.addEventListener('click', function() {
+  formSignin.classList.add('visible');
+  btnSignin.classList.add('actived_btn');
+  formRegister.classList.remove('visible');
+  btnRegister.classList.remove('actived_btn');
+})
+
+btnRegister.addEventListener('click', function() {
+  formRegister.classList.add('visible');
+  btnRegister.classList.add('actived_btn');
+  formSignin.classList.remove('visible');
+  btnSignin.classList.remove('actived_btn');
+})
+
+
+//============================================
+//Boutons pour afficher le formulaire : CB
+//============================================
+var btnTypeOfCard = document.getElementById('typeOfCardImg1');
+var formPaymentPart = document.getElementById('SupportFormPaymentPart');
+
+btnTypeOfCard.addEventListener('click', function() {
+  btnTypeOfCard2.classList.remove('activated_typeOfCard');
+  btnTypeOfCard3.classList.remove('activated_typeOfCard');
+
+  btnTypeOfCard.classList.add('activated_typeOfCard');
+  formPaymentPart.classList.add('visible_PaymentForm');
+  formPaymentPart.classList.remove('invisible_PaymentForm');
+})
+
+
+//============================================
+//Boutons pour afficher le formulaire : Visa
+//============================================
+var btnTypeOfCard2 = document.getElementById('typeOfCardImg2');
+
+btnTypeOfCard2.addEventListener('click', function() {
+  btnTypeOfCard.classList.remove('activated_typeOfCard');
+  btnTypeOfCard3.classList.remove('activated_typeOfCard');
+
+  btnTypeOfCard2.classList.add('activated_typeOfCard');
+  formPaymentPart.classList.add('visible_PaymentForm');
+  formPaymentPart.classList.remove('invisible_PaymentForm');
+})
+
+//============================================
+//Boutons pour afficher le formulaire : Mastercard
+//============================================
+var btnTypeOfCard3 = document.getElementById('typeOfCardImg3');
+
+btnTypeOfCard3.addEventListener('click', function() {
+  btnTypeOfCard.classList.remove('activated_typeOfCard');
+  btnTypeOfCard2.classList.remove('activated_typeOfCard');
+
+  btnTypeOfCard3.classList.add('activated_typeOfCard');
+  formPaymentPart.classList.add('visible_PaymentForm');
+  formPaymentPart.classList.remove('invisible_PaymentForm');
+})
+
+
+// Boutons des montants
+
+var FormPriceButtonOthers = document.getElementById('priceOther');
+var InputOtherPrice = document.getElementById('OtherPriceInputContainer');
+
+FormPriceButtonOthers.addEventListener('click', function() {
+  FormPriceButtonOthers.classList.add('enabled__price-btn');
+  InputOtherPrice.classList.add('visible_OtherPriceInput');
+  InputOtherPrice.classList.remove('invisible_OtherPriceInput');
+})
+
+var FormPriceButton = document.getElementById('priceButton');
+
+FormPriceButton.addEventListener('click', function() {
+  FormPriceButtonOthers.classList.remove('enabled__price-btn');
+  InputOtherPrice.classList.add('invisible_OtherPriceInput');
+  InputOtherPrice.classList.remove('visible_OtherPriceInput');
+})
