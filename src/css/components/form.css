@@ -1,0 +1,42 @@
+/* FORMULAIRE DE PAIEMENT (SOUTENIR) */
+/*-----------------------*/
+
+.support-form {
+    margin: 10%;
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+/* titres du formulaire (se connecter/s'inscrire)*/
+.support-form__header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+
+}
+.support-form__header1-div {background-color: var(--grey);}
+.support-form__header1 {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.support-form__header2-div {background-color: var(--light--grey);}
+.support-form__header2 {
+    background-color: var(--light--grey);
+    color: var(--white);
+}
+
+.support-form__pricebutton {
+    color: var(--white);
+}
+
+
+
+/*CAPTCHA*/
+.support-form__captcha {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+}
+
