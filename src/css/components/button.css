@@ -32,3 +32,22 @@
     background-color: var(--blue);
     border-radius: 5px;
 }
+
+
+/* bouton des formulaires*/
+
+/*bouton valider*/
+.form__button-sent-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5% 2% 5% 2%;
+}
+
+.form__button-sent {
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 2% 10% 2% 10%;
+    border-radius: 10px;
+}

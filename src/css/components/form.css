@@ -5,7 +5,7 @@
 /*-----------------------------------*/
 
 .support-form {
-    margin: 3%;
+    margin: 3% 3% 3% 3%;
     padding: 3%;
     background-color: var(--grey);
     color: var(--white);
@@ -13,6 +13,7 @@
 
 /* titres du formulaire (se connecter/s'inscrire)*/
 .support-form__header {
+    margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
@@ -180,22 +181,6 @@
     gap: 1%;
 }
 
-/*bouton valider*/
-.support-form__button-send-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 10% 2% 2% 2%;
-}
-
-.support-form__button-send {
-    color: var(--white);
-    background-color: var(--blue);
-    padding: 2% 10% 2% 10%;
-    border-radius: 10px;
-}
-
 .support-form__securised-mention {
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
@@ -268,7 +253,7 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
     .support-form__price-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

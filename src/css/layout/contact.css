@@ -1,0 +1,70 @@
+.contact__paragraph-div {
+    padding-right: 10%
+}
+
+.contact__paragraph {
+    text-align: end;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.contact-form {
+    margin: 2%;
+}
+.contact-form__input-div, .contact-form__message-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0% 0% 1% 0%;
+
+    font-weight: bold;
+    font-size: var(--pc--header3);
+}
+    @media (max-width: 500px){
+    .contact-form__input-div, 
+    .contact-form__message-div {
+        font-size: var(--tel--header1);
+    }
+    }
+.contact-form__message-div {
+    padding-bottom: 100px;
+}
+
+.contact-form__input-div label,
+.contact-form__message-div {
+    text-transform: uppercase;
+    margin-bottom: -2%;
+}
+
+.contact-form__input-div input, 
+.contact-form__message-div textarea{
+    border: none;
+    border-bottom: 2px solid var(--white);
+    background-color: transparent;
+    width: 80%; 
+    margin: 2%;
+    padding: 2% 2% 2% 2%;
+    color: var(--white);
+
+}
+
+.contact-form__message-div textarea {
+    border: 2px solid var(--white);
+    width: 90%;
+    height: 300px;
+}
+
+
+.contact-form__captcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form__conditions__checkbox-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 2% 1% 2% 1%;
+    gap: 1%;
+}
