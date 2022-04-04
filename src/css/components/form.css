@@ -149,9 +149,11 @@
     align-items: center;
 
     font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .support-form__tshirt-img {
-    width: 50%;
+    width: 70%;
 }
 
 .support-form__tshirt-black, .support-form__tshirt-white {
@@ -190,10 +192,21 @@
 }
 
 .support-form__ast {
-    font-size: var(--pc--legende);
+    font-size: var(--pc--body);
     font-style: italic;
 }
 
+.support-form__conditions__checkbox-div a {
+    color: var(--purple)
+}
+
+/*Petits textes pour cocher le t-shirt et les checkboxs (contact
+& support)*/
+.contact-form__conditions__checkbox-div,
+.support-form__conditions__checkbox-div,
+.support-form__tshirt-radio-div {
+    font-size: small;
+}
 
 /*================================*/
         /*PARTIE JAVASCRIPT*/
