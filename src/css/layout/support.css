@@ -6,7 +6,7 @@
 
 .support__homepage {
     background-image: url(../../../assets/img/arquest_background.svg);
-    background-size:100%;
+    background-size: 100%;
     background-position-y: top;
     background-position-x: right;
     background-repeat: no-repeat;
@@ -17,15 +17,16 @@
 .support-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0% 3% 1% 3%;    
+    padding: 0% 3% 1% 3%;
 }
 
 .support-hero__start {
     padding: 0% 0% 0% 15%;
 }
-    .support-hero__start__heading {
-        text-transform: uppercase;
-    }
+
+.support-hero__start__heading {
+    text-transform: uppercase;
+}
 
 .support-hero__end {
     margin: 10vh 0% 0% 0%;
@@ -35,15 +36,16 @@
     flex-direction: column;
 }
 
-    .support-hero__end__img {
-        width: 20vw;
-    }
-    .support-hero__end__txt {
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        padding: 2% 20% 2% 20%;
-    }
+.support-hero__end__img {
+    width: 20vw;
+}
+
+.support-hero__end__txt {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 2% 20% 2% 20%;
+}
 
 
 
@@ -51,50 +53,72 @@
 .support-hero2 {
     max-width: 100%;
 }
-    .support-hero__bottom {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+
+.support-hero__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.support-hero__bottom-text {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    text-align: center;
+    margin-top: -5%;
+}
+
+
+
+.support-hero__bottom-text__item {
+    padding: 10%;
+}
+
+.support-hero__bottom-timeline-div {
+    padding: 3%
+}
+
+.support-hero__bottom-timeline {
+    width: 100%;
+}
+
+#red__charge {
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: all;
+}
+
+/*
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+        transform-origin: center;
     }
-    .support-hero__bottom-text {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        width: 100%;
-        text-align: center;
-        margin-top: -5%;
+
+    to {
+        transform: rotate(360deg);
+        transform-origin: center;
     }
+}*/
 
-    
+/*astérisque du SH*/
+.support-hero__ast-div {
+    padding: 1% 10% 1% 10%;
+    margin-top: 0%;
+}
 
-    .support-hero__bottom-text__item {
-        padding: 10%;
-    }
-
-    .support-hero__bottom-timeline-div {
-        padding: 3%
-    }
-
-    .support-hero__bottom-timeline {
-        width: 100%;
-    }
-
-    /*astérisque du SH*/
-   .support-hero__ast-div {
-        padding: 1% 10% 1% 10%;
-        margin-top: 0%;
-    }
-    .support-hero__ast {
-        font-weight: 300;
-        font-style: italic;
-        text-align: start;
-    }
- 
+.support-hero__ast {
+    font-weight: 300;
+    font-style: italic;
+    text-align: start;
+}
 
 
-    /*partie responsive*/
 
-    /*SUPPORT HERO*/
+/*partie responsive*/
+
+/*SUPPORT HERO*/
 @media (max-width: 600px) {
     .support-hero {
         display: grid;
@@ -113,6 +137,7 @@
     .support-hero__end {
         margin-top: 1%;
     }
+
     .support-hero2 {
         display: none;
     }
@@ -121,6 +146,7 @@
         padding: 0%;
         margin: 1% 3% 3% 3%;
     }
+
     .support-hero__ast {
         font-weight: 300;
         font-style: italic;

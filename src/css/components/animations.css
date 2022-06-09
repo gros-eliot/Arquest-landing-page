@@ -99,3 +99,26 @@
     border: 5px solid var(--purple);
     transition: 500ms ease;
 }
+
+
+
+/*animation soutenir */ 
+/*
+.orange_charge {
+    animation: 2s linear infinite loading;
+}
+@keyframes loading {
+    0%{
+        transform: rotate(0);
+        transform-origin: center center;
+    }
+    100%{
+        transform: rotate(360);
+        transform-origin: center center;
+    }
+}
+*/
+.red__charge {
+    transform: rotate(360deg);
+    animation: transform 2s linear infinite;
+}

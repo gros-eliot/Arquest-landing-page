@@ -15,25 +15,25 @@
 
         <div class="header__start">
             <label id="compte_a_rebours"></label>
-            <script type="text/javascript">
-                var Affiche = document.getElementById("compte_a_rebours");
-                function Rebour() {
+                <script type="text/javascript">
+                    var Affiche=document.getElementById("compte_a_rebours");
+                    function Rebour() {
                     var date1 = new Date();
-                    var date2 = new Date("Jun 15, 2022 00:00:00");
+                    var date2 = new Date ("Jun 15, 2022 00:00:00");
                     var sec = (date2 - date1) / 1000;
                     var n = 24 * 3600;
                     if (sec > 0) {
-                        j = Math.floor(sec / n);
-                        h = Math.floor((sec - (j * n)) / 3600);
-                        mn = Math.floor((sec - ((j * n + h * 3600))) / 60);
-                        sec = Math.floor(sec - ((j * n + h * 3600 + mn * 60)));
-                        Affiche.innerHTML = "" + j + ":" + h + ":" + mn + ":" + sec;
-                        window.status = "Temps restant : " + j + " j " + h + " h " + mn + " min " + sec + " s ";
+                    j = Math.floor (sec / n);
+                    h = Math.floor ((sec - (j * n)) / 3600);
+                    mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+                    sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+                    Affiche.innerHTML = "" + j +":"+ h +":"+ mn +":"+ sec;
+                    window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
                     }
-                    tRebour = setTimeout("Rebour();", 1000);
-                }
-                Rebour();
-            </script>
+                    tRebour=setTimeout ("Rebour();", 1000);
+                    }
+                    Rebour();
+                </script>
         </div>
 
         <div class="header__mid">
@@ -48,7 +48,7 @@
             </div>
 
             <div class="header__link-div">
-                <a href="soutenir.html" class="layout__link layout__link-button">Soutenir</a>
+                <a href="https://arquest-app.eliotgros.fr/" class="layout__link layout__link-button ">Rejoindre</a>
             </div>
         </div>
 
@@ -81,8 +81,37 @@
                 <div class="support-hero__bottom">
 
                     <div class="support-hero__bottom-timeline-div">
-                        <img src="assets/img/frise_design.png" alt="Frise sur l'avancée du projet Arquest (design)"
-                            class="support-hero__bottom-timeline">
+                        <svg width="1613" height="170" viewBox="0 0 1613 170" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="support-hero__bottom-timeline">
+                            <rect y="82" width="1593" height="25" rx="12.5" fill="black" />
+                            <circle cx="97" cy="95" r="54" fill="black" />
+                            <circle cx="380" cy="95" r="54" fill="black" />
+                            <circle cx="946" cy="95" r="54" fill="black" />
+                            <circle cx="665" cy="95" r="54" fill="black" />
+                            <circle cx="1229" cy="95" r="54" fill="black" />
+                            <circle cx="1528" cy="85" r="85" fill="black" />
+                            <circle cx="97" cy="95" r="30" fill="white" />
+                            <circle cx="665" cy="95" r="30" fill="white" />
+                            <circle cx="946" cy="95" r="30" fill="white" />
+                            <circle cx="1229" cy="95" r="30" fill="white" />
+                            <circle cx="380" cy="95" r="30" fill="white" />
+                            <rect x="9" y="91" width="1223" height="7" rx="3.5" fill="white" />
+                            <path d="M1485.64 81.1829L1495.9 96.3231L1518.97 98.2195L1521.53 96.3231" fill="#A5A4D2" />
+                            <path
+                                d="M1570 32.3342V48.8467L1509.76 144L1485 105.522V92.8438L1507.76 123.577L1570 32.3342Z"
+                                fill="#A5A4D2" />
+                            <path d="M1570 20V36.4919L1509.76 131.645L1485 93.1676V80.4891L1507.76 111.222L1570 20Z"
+                                fill="#5257A2" />
+                            <path d="M1565.07 55.1525H1560.62V45.1824H1565.07V55.1525Z" fill="white" />
+                            <path d="M1559.69 65.133H1556.15V55.1525H1560.6V63.6837" fill="white" />
+                            <path d="M1551.71 65.133H1547.27V55.1525H1551.71V65.133Z" fill="white" />
+                            <path d="M1553.37 75.1134H1551.71V65.1329H1556.15V70.7193" fill="white" />
+                            <path d="M1565.07 55.1525H1566L1565.07 56.6532V55.1525Z" fill="white" />
+
+                            <path id="red__charge"
+                                d="M1241.65 80.6266C1242.69 79.4447 1242.59 77.6254 1241.28 76.7464C1237.88 74.4595 1233.89 73.1561 1229.76 73.0132C1224.67 72.8371 1219.68 74.4303 1215.64 77.5213C1211.6 80.6122 1208.75 85.0097 1207.58 89.9644C1206.42 94.9191 1207.01 100.124 1209.25 104.694C1211.49 109.263 1215.25 112.913 1219.88 115.022C1224.52 117.131 1229.74 117.569 1234.65 116.261C1239.57 114.953 1243.89 111.98 1246.86 107.848C1249.27 104.491 1250.68 100.539 1250.95 96.4512C1251.06 94.88 1249.68 93.6832 1248.11 93.7832V93.7832C1246.54 93.8833 1245.37 95.2462 1245.2 96.8111C1244.89 99.5764 1243.87 102.233 1242.23 104.518C1240.03 107.579 1236.83 109.781 1233.19 110.75C1229.54 111.719 1225.68 111.395 1222.25 109.833C1218.81 108.27 1216.03 105.566 1214.37 102.181C1212.71 98.7962 1212.27 94.94 1213.13 91.2696C1214 87.5991 1216.11 84.3414 1219.1 82.0516C1222.1 79.7617 1225.8 78.5815 1229.56 78.7119C1232.38 78.8092 1235.1 79.6321 1237.48 81.0791C1238.82 81.8979 1240.61 81.8085 1241.65 80.6266V80.6266Z"
+                                fill="#FF6F6F" />
+                        </svg>
                     </div>
 
 
@@ -100,7 +129,7 @@
                             <p>Validation</p>
                         </div>
                         <div class="support-hero__bottom-text__item">
-                            <p>Intégration</p>
+                            <p><strong>Intégration</strong></p>
                         </div>
                         <div class="support-hero__bottom-text__item">
                             <p>Mise en ligne</p>
@@ -410,30 +439,39 @@
 
 
                 <div class="support-form__captcha">
-                    <div> <div class="g-recaptcha" data-callback="correctCaptcha" data-sitekey="6LccVC4fAAAAAOYheOKba97IgKoO4WkZI8maGv1v"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdvxjMUAAAAAJpdBqCZa4t31DH1dV73_lxDmxJy&amp;co=aHR0cHM6Ly93d3cubm9jaWJlLmZyOjQ0Mw..&amp;hl=fr&amp;v=2uoiJ4hP3NUoP9v_eBNfU6CR&amp;size=normal&amp;cb=3tsqcx1j1uq4" width="304" height="78" role="presentation" name="a-c2o9l0h3ij1n" frameborder="0" scrolling="no"></iframe></div></div><iframe style="display: none;"></iframe></div> 
+                    <div>
+                        <div class="g-recaptcha" data-callback="correctCaptcha"
+                            data-sitekey="6LccVC4fAAAAAOYheOKba97IgKoO4WkZI8maGv1v">
+                            <div style="width: 304px; height: 78px;">
+                                <div><iframe title="reCAPTCHA"
+                                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdvxjMUAAAAAJpdBqCZa4t31DH1dV73_lxDmxJy&amp;co=aHR0cHM6Ly93d3cubm9jaWJlLmZyOjQ0Mw..&amp;hl=fr&amp;v=2uoiJ4hP3NUoP9v_eBNfU6CR&amp;size=normal&amp;cb=3tsqcx1j1uq4"
+                                        width="304" height="78" role="presentation" name="a-c2o9l0h3ij1n"
+                                        frameborder="0" scrolling="no"></iframe></div>
+                            </div><iframe style="display: none;"></iframe>
+                        </div>
+                    </div>
                 </div>
-            </div>
-                
 
-                        <div class="support-form__conditions">
-                            <div class="support-form__conditions__checkbox-div">
-                                <label>En cochant cette case, j’accepte de recevoir les newsletters
-                                    d’Arquest dans ma boite e-mail</label>
-                                <input type="checkbox" name="checkbox1" id="checkbox3">
-                            </div>
-                            <div class="support-form__conditions__checkbox-div">
-                                <label>J’ai lu et j’autorise les conditions générales de vente Arquest.
-                                    Pour plus d’informations : <a href="mentions.html">conditions générales de
-                                        vente</a>.</label>
-                                <input type="checkbox" name="checkbox2" id="checkbox4">
-                            </div>
-                        </div>
 
-                        <div class="form__button-sent-div">
-                            <button class="form__button-sent" type="submit">Envoyer</button>
-                        </div>
+                <div class="support-form__conditions">
+                    <div class="support-form__conditions__checkbox-div">
+                        <label>En cochant cette case, j’accepte de recevoir les newsletters
+                            d’Arquest dans ma boite e-mail</label>
+                        <input type="checkbox" name="checkbox1" id="checkbox3">
+                    </div>
+                    <div class="support-form__conditions__checkbox-div">
+                        <label>J’ai lu et j’autorise les conditions générales de vente Arquest.
+                            Pour plus d’informations : <a href="mentions.html">conditions générales de
+                                vente</a>.</label>
+                        <input type="checkbox" name="checkbox2" id="checkbox4">
+                    </div>
+                </div>
 
-                        <p class="support-form__securised-mention">Paiement sécurisé et sans frais supplémentaires</p>
+                <div class="form__button-sent-div">
+                    <button class="form__button-sent" type="submit">Envoyer</button>
+                </div>
+
+                <p class="support-form__securised-mention">Paiement sécurisé et sans frais supplémentaires</p>
             </form>
         </div>
 
@@ -450,16 +488,13 @@
 
             <div class="footer__top-end">
                 <ul class="listUnstyled footer__socialmedia">
-                    <li><a href="https://www.facebook.com/"><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest"
-                                class="footer__socialmedia__link"></a></li>
-                    <li><a href="https://www.instagram.com/"><img src="assets/logo/instagram.svg"
-                                alt="Instagram d'Arquest" class="footer__socialmedia__link"></a></li>
-                    <li><a href="https://twitter.com/"><img src="assets/logo/twitter.svg" alt="Twitter d'Arquest"
-                                class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="assets/logo/facebook.svg" alt="Facebook d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="assets/logo/instagram.svg" alt="Instagram d'Arquest" class="footer__socialmedia__link"></a></li>
+                    <li><a href="https://twitter.com/"><img src="assets/logo/twitter.svg" alt="Twitter d'Arquest" class="footer__socialmedia__link"></a></li>
                 </ul>
                 <!--bouton layout (header & footer) : soutenir-->
                 <div class="footer__top__layout-link-div">
-                    <a href="soutenir.html" class="layout__link layout__link-button">Soutenir</a>
+                    <a href="https://arquest-app.eliotgros.fr/" class="layout__link layout__link-button">Rejoindre</a>
                 </div>
 
             </div>
@@ -467,26 +502,24 @@
 
         <div class="footer__mid">
             <div class="footer__mid__link-div">
-                <h3><a href="contact.html" class="layout__link footer__mid__link">Contact</a></h3>
-                <h3><a href="apropos.html" class="layout__link footer__mid__link">À propos</a></h3>
-                <h3><a href="mentions.html" class="layout__link footer__mid__link">Mentions légales</a></h3>
+            <h3><a href="contact.html" class="layout__link footer__mid__link">Contact</a></h3>
+            <h3><a href="apropos.html" class="layout__link footer__mid__link">À propos</a></h3>
+            <h3><a href="mentions.html" class="layout__link footer__mid__link">Mentions légales</a></h3>
             </div>
         </div>
 
         <div class="footer__bottom">
             <div class="footer__bottom__mention-div">
                 <a href="http://mmimontbeliard.com/" class="footer__mmi-link">
-                    <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard"
-                        class="layout__link-img">
+                    <img src="assets/logo/mmi_logo.svg" alt="Logo du département MMI de Montbéliard" class="layout__link-img">
                 </a>
                 <p class="footer__bottom__mention-line">
-                    Projet réalisé dans le
-                    cadre d’un exercice pédagogique au
-                    département <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link">MMi de
-                        Montbéliard
-                    </a></p>
-            </div>
-
+                    Projet réalisé dans le 
+                    cadre d’un exercice pédagogique au 
+                    département <a href="http://mmimontbeliard.com/" class="footer__mmi-link layout__link">MMi de Montbéliard
+                </a></p>
+            </div> 
+                
 
             <div class="footer__bottom__copyright-div">
                 <p class="footer__bottom__copyright">France</p>
